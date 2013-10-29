@@ -1,0 +1,414 @@
+/*********************************************
+---------------------------------------------- 
+Filename: master.css
+Purpose: CSULA Alumni Association Default layout.
+Created by: Adam James
+Created: February 16, 2013
+Last Modified: March 03, 2013
+---------------------------------------------- 
+*********************************************/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+	margin:0;
+	padding:0;
+	font-family:Arial, helvetica, sans-serif;
+	font-size:62.5%;
+	color:#333;
+	text-decoration:none;
+    line-height:1.125em;		
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+a {	text-decoration:none; }
+a:hover {	text-decoration:underline; }
+
+ins {
+    background-color:#FFCC00;
+    color:#000;
+    text-decoration:none;
+}
+
+mark {
+    background-color:#FFCC00;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+p { margin:1em 0;}
+
+input, select {
+    vertical-align:middle;
+}
+
+h1 { font-size:170%; }
+h2 { font-size:150%; }
+h3 { font-size:130%; }
+h4 { font-size:100%; }
+h1,h2,h3,h4,h5 { font-family: 'Passion One', cursive; }
+
+#container {
+	margin:0 auto;
+	padding:0;
+	width:950px;
+}
+
+/*****************************************************************/
+/*
+//////////// -- HEADER -- ////////////
+*/
+
+#header {
+	margin:10px 0;
+}
+
+#main_nav {
+	border-bottom:1px dotted #333;
+	padding:5px 0;
+	float:right;
+	margin:20px 0 0 0;
+	width:860px;
+}
+
+#main_nav ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+#main_nav ul li.last { width: 80px!important; margin:0!important;}
+#main_nav ul li {
+	list-style-type:none;
+	display:inline-block;
+	padding:0;
+	margin:0 16px 0 0;
+	text-align:left;
+	width:16%;
+}
+
+#main_nav ul li a { color:#000;}
+#main_nav ul li a:hover { color:#FFD400; text-decoration:none;}
+#main_nav ul li a { text-transform:uppercase; font-size:2em; }
+#main_nav ul li a.active { color:#FFD400!important; }
+
+/*****************************************************************/
+/*
+//////////// -- MAIN CONTENT -- ////////////
+*/
+
+#main_content {
+	position:relative;
+	overflow:hidden;
+	width:950px;
+}
+
+.sp_image { 
+	overflow:hidden;
+	width:0;
+}
+
+#splash {
+	border-bottom:1px dotted #000;	
+	border-top:1px dotted #000;
+	padding:2px 0;
+	margin-bottom:10px;			
+}
+
+.img_holder {
+	position:absolute;
+	width:0;
+}
+
+#splash.homePage #splash_content .color_div { height:370px; }
+#splash.secondLevel #splash_content .color_div { height:275px; }
+#splash.thirdLevel #splash_content .color_div { height:50px; }
+
+.color_div { position:absolute; width:190px; }
+#color_div_0 { background-color:#CCCC00; }
+#color_div_1 { background-color:#E6CF00; }
+#color_div_2 { background-color:#D9BB14; }
+#color_div_3 { background-color:#FAAF40; }
+#color_div_4 { background-color:#D99014; }
+
+
+#splash.homePage { height:370px; }
+#splash.secondLevel { height:275px; }
+#splash.thirdLevel { height:50px; }
+
+#splash_content {background-image:url('../images/mc_tile_bg.jpg'); background-repeat:repeat-y;}
+#splash.homePage #splash_content { height:370px; }
+#splash.secondLevel #splash_content { height:275px; }
+#splash.thirdLevel #splash_content { height:50px; }
+#splash.homePage #splash_content,
+#splash #splash_content table { width:950px; }
+
+#splash_content table td { width:20%; }
+#splash_content table td#sp_td0 { background-color:#CCCC00; }
+#splash_content table td#sp_td1 { background-color:#E6CF00; }
+#splash_content table td#sp_td2 { background-color:#D9BB14; }
+#splash_content table td#sp_td3 { background-color:#FAAF40; }
+#splash_content table td#sp_td4 { background-color:#D99014; }
+
+.tran_image { 
+	position:absolute;
+}
+
+#inner_content { 
+	width:100%;
+	margin:15px 0;
+	position:relative;	
+}
+
+/*****************************************************************/
+/*
+//////////// -- SECTION CONTENT -- ////////////
+*/
+
+#section_navigation {
+	width:190px;
+	position:absolute;	
+}
+
+#section_navigation ul {
+	list-style-type:none;
+	margin:3px 0;
+	padding:0;
+	width:188px;
+}
+
+#section_navigation ul li {
+	list-style-type:none;
+	padding:4px 6px;
+	margin:0;
+	border-bottom:1px dotted #000;
+	font-size:18px;
+	line-height:19px;	
+	display:block;	
+}
+
+#section_navigation a:hover { text-decoration:none!important; }
+#section_navigation ul li.active,
+#section_navigation ul li:hover {
+	background-color:#FFD400;
+}
+
+#section_navigation ul li a { 
+	color:#000; 
+	padding:.25em .5em; 
+	width:165px; 
+	display:block; 
+}
+
+#section_content {
+	width:380px;
+	margin:0 0 0 230px;
+	padding:0;
+	min-height:280px;
+	font-size:120%;
+	line-height:140%;
+}
+
+#section_right_column {
+	float:right;
+	width:280px;
+}
+#section_right_column.secondLevel {
+	text-align:right;
+}
+#section_right_column.thirdLevel {
+	text-align:left;
+	background-color:#E0E0E0;
+	padding:10px;
+	font-style:italic;
+}
+
+#alum_events {
+	padding:10px;
+	background-color:#E0E0E0;
+}
+
+#alum_events table { width:100%;}
+#alum_events table th,
+#alum_events table td { text-align:left;}
+#alum_events table tr.separator { height: 20px; }
+
+/*****************************************************************/
+/*
+//////////// -- SUB CONTENT -- ////////////
+*/
+
+#sub_content {
+	width:100%;
+	height:95px;
+	margin:15px 0;
+	position:relative;
+}
+
+#sub_content.secondLevel {
+	margin:0!important;
+	height:auto!important;
+	top:-50px;
+	text-align:right;	
+}
+
+#sub_left { width:200px;}
+#sub_left #logo_links {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	position:absolute;
+	top:57px;
+}
+
+#logo_links li {
+	list-style-type:none;
+	display:inline-block;
+	padding:0;
+	margin:0;
+}
+
+#sub_right { width:250px; }
+#sc_alumassoc, #sc_connect { position:absolute;}
+#sc_alumassoc { right:0; }
+#sc_connect { top:30px; }
+
+/*****************************************************************/
+/*
+//////////// -- FOOTER -- ////////////
+*/
+
+#footer {
+	margin:10px 0;
+	width:100%;
+}
+
+#footer a {
+	color:#333;
+}
+
+#f_nav { 
+	border-top:1px dotted #000;
+	border-bottom:1px dotted #000;
+	padding:5px 0;
+}
+
+#f_nav table { width:100%; }
+#f_nav table th { text-align:left; }
+#f_nav table td { width:12.5%; }
+#f_nav .f_nav_header { text-transform:uppercase; }
+#f_nav table ul {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+
+#f_nav table ul li { margin:2px 3px 2px 0; }
+
+/*****************************************************************/
+/*
+//////////// -- .CLASSES -- ////////////
+*/
+
+.clearfloat { 
+	clear:both; 
+	height:0; 
+	line-height:0px!important; 
+	height:0px;
+}
+	
+.left { float:left; }
+.right { float:right; }
+.heavyFont { font-family: 'Passion One', cursive; }
+
+.skipper		{ 
+	position: absolute;
+	top: 0;left: 0;width:14em;	
+	text-align:left;
+	text-indent: -1000em;	
+	color: #fff;	
+	background: transparent;
+	font-size: 0.8em;	
+	z-index: -1;
+	left:-10000px; 
+}
+
+.skipper:focus, 
+.skipper:hover { 
+	border:1px solid #000;	
+	display: block;	
+	text-indent: 25px;	
+	background: #FFEE98;
+	font-weight: bold;	
+	color: #000;		
+	z-index: 5;
+}
