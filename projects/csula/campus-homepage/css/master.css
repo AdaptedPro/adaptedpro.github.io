@@ -1,0 +1,293 @@
+/*********************************************
+---------------------------------------------- 
+Filename: master.css
+Purpose: CSULA Default layout.
+Created by: Adam James
+Created: September 1, 2012
+Last Modified: September 17, 2012
+---------------------------------------------- 
+*********************************************/
+
+@import url("homepage.css");
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+	margin:0;
+	padding:0;
+	font-family:Arial, helvetica, sans-serif;
+	font-size:62.5%;
+	color:#333;
+	text-decoration:none;
+    line-height:1.125em;		
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+a {	text-decoration:none; }
+a:hover {	text-decoration:underline; }
+
+ins {
+    background-color:#FFCC00;
+    color:#000;
+    text-decoration:none;
+}
+
+mark {
+    background-color:#FFCC00;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+p { margin:1em 0;}
+
+input, select {
+    vertical-align:middle;
+}
+
+#container {
+	margin:0;
+	padding:0;
+	width:100%;
+}
+
+/*****************************************************************/
+/*
+//////////// -- BANNER TOP -- ////////////
+*/
+
+#bannertop {
+	width:100%;
+	background-color:#333;
+}
+
+#bannertop .inner {
+	max-width:985px; min-width:950px;
+	padding:1px 3px;
+	overflow:hidden;	
+}
+
+#bannertop .inner ul {
+	margin:0;
+	padding:0;
+	width:auto;
+	float:right;
+}
+
+#bannertop .inner ul li {
+	float:left;
+	display:inline-block;
+	margin:2px 5px 2px 3px;
+	padding-right:10px;
+	background-image:url(../images/gold_line.jpg);
+	background-repeat:no-repeat;
+	background-position:right;
+	height:29px;
+}
+
+#bannertop .inner ul li.last {
+	border:none;
+	background-image:url(../images/input.jpg);
+	background-repeat:no-repeat;
+	background-position:left center;
+	padding-right:0px;
+}
+
+#bannertop .inner ul li a {
+	color:#FFF;
+	text-transform:lowercase;
+	font-size:1.125em;
+	position:relative;
+	top:9px;
+}
+
+#bannertop .inner ul li a span {
+	text-transform:uppercase;
+}
+
+#query {
+	background:none;
+	color:#333;
+	width:140px;
+	height:29px;
+	border:0;
+	padding: 0 4px 0 12px;
+	margin:0;
+}
+ 
+#IEroot #goBtn {
+	width: 29px;
+	font-size: 0;
+	color: #fff;
+	text-align: right;
+}
+
+#IEroot #goBtn{
+	width: 29px;
+	text-indent: 0;
+}
+
+#wrapper {
+	width:950px;
+	margin:5px auto 0 auto;
+	padding:5px 0;
+}
+
+.div_frame {
+	border-bottom:1px dotted #333;
+	border-top:1px dotted #333;
+}
+
+/*****************************************************************/
+/*
+//////////// -- FOOTER -- ////////////
+*/
+
+#footer {
+	margin:10px 0;
+	width:100%;
+	color:#000;
+}
+
+#footer a {
+	color:#333;
+}
+
+#footer .left a:hover {
+	background-color:#000;
+}
+
+/*****************************************************************/
+/*
+//////////// -- .CLASSES -- ////////////
+*/
+address { font-style:normal; }
+.arrow_btn img { width:20px; }
+.border { border:1px dotted #333; }
+
+.clearfloat { 
+	clear:both; 
+	height:0; 
+	line-height:0px!important; 
+	height:0px;
+}
+
+.color_bg { 
+	background-image:url(../images/tile_bg.jpg);
+	background-repeat:repeat-y;
+}
+
+.get_plugin ul { list-style-type:none; }
+.get_plugin ul li { margin:3px 0;}
+
+.heavyFont { font-family: 'Francois One', sans-serif; }
+.selected_col ul { background-color:#FAAF40;}
+.selected_col ul li a { color:#000!important;}
+.set_width { width:950px; margin:0 auto; padding:0;}
+
+.link_more {
+	position:absolute;
+	bottom:15px;
+	right:15px;
+}
+
+.link_more a {
+	color:#333;
+	text-decoration:underline;
+	text-transform:lowercase;
+}
+	
+.left { float:left; }
+.right { float:right; }
+
+.skipper		{ 
+	position: absolute;
+	top: 0;left: 0;width:14em;	
+	text-align:left;
+	text-indent: -1000em;	
+	color: #fff;	
+	background: transparent;
+	font-size: 0.8em;	
+	z-index: -1; 
+}
+
+.skipper:focus, 
+.skipper:hover, 
+.skipper:active { 
+	border:1px solid #000;	
+	display: block;	
+	text-indent: 25px;	
+	background: #ffee98;
+	font-weight: bold;	
+	color: #000;	
+	padding: 0.2em 0.2em 0.2em 0;	
+	z-index: 5;
+}

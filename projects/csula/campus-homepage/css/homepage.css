@@ -1,0 +1,434 @@
+/*********************************************
+---------------------------------------------- 
+Filename: template.css
+Purpose: CSULA Hompage layout.
+Created by: Adam James
+Created: September 6, 2012
+Last Modified: December 19, 2012
+---------------------------------------------- 
+*********************************************/
+
+/*****************************************************************/
+/*
+//////////// -- MASTHEAD -- ////////////
+*/
+
+#goBtn {
+	height: 29px;
+	width: 29px;
+	cursor: pointer;
+	text-indent: -9999px;
+	border: none;
+	background-image:url(../images/search_btn.jpg);
+	background-repeat:no-repeat;
+	background-position:left top;
+	margin:0;
+}
+
+#masthead { margin:0; }
+
+#logoframe {
+	width:334px;
+	/*text-align:center;*/
+}
+
+#masthead_logo {
+	width:334px;
+	margin:0;
+}
+
+#mh_nav {
+	border-top:1px dotted #333;
+	border-bottom:1px dotted #333;
+	padding:10px 0;
+	float:right;
+	margin:20px 0 0 0;
+	width:600px;
+}
+
+#mh_nav table { width:100%; margin:3px 0;}
+#mh_nav td { padding:10px 0;}
+
+#mh_nav.hidden {
+	border-top:0;
+	border-bottom:0;
+	padding:0;
+	margin:0 0 10px 0; 	
+}
+
+#masthead_nav_subopts {
+	margin:0;
+	width:600px;
+	float:right;
+	line-height:110%;
+}
+
+#masthead_nav_opts th a { color:#000; text-transform:lowercase; font-size:1.25em; width:80px;}
+#masthead_nav_opts th a:hover { color:#FFD400; text-decoration:none; }
+
+#masthead_nav_subopts tr td {
+	valign:top; vertical-align:top;
+}
+
+#masthead_nav_subopts tr td .menu_option ul {
+	width:70%;
+	margin:0 5px;
+}
+
+.menu_option ul {
+	list-style-type:none;	
+	padding:3px;
+	font-family:Arial, helvetica, sans-serif;
+	width:90%;
+	margin:0 auto;
+}
+
+.menu_option ul li {
+	list-style-type:none;
+	word-wrap:break-word;
+	font-size:1.125em;
+	margin:3px 0;
+	padding:2px;
+	width:100%;	
+}
+
+.menu_option ul li a,
+#m_sub_nav div ul li a {
+	color:#333;	
+}
+
+/* FOR NON-TABLE LAYOUT
+#mh_nav ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+#mh_nav ul li {
+	list-style-type:none;
+	display:inline-block;
+	padding:0;
+	margin:0;
+	text-align:center;
+	width:145px;
+}
+
+#mh_nav ul li a { color:#AAA;}
+#mh_nav ul li a:hover { color:#FFD400; text-decoration:none;}
+#mh_nav ul li a { text-transform:lowercase; font-size:1.35em; }
+
+#mh_sub_nav .menu_option {
+	width:145px;
+	display:inline-block;
+	margin:0;
+	padding:0;
+	vertical-align:top;
+}
+
+#mh_sub_nav, #m_sub_nav {
+	padding:10px 0;
+	display:none;
+}
+
+#m_sub_nav .menu_option {
+	width:110px;
+	display:inline-block;
+	margin:0;
+	padding:0;
+	vertical-align:top;
+}
+
+#m_sub_nav select {width:80px; font-size:100%;}
+#m_sub_nav .empty { width:48%!important; }
+*/
+
+/*****************************************************************/
+/*
+//////////// -- MAINCONTENT -- ////////////
+*/
+
+#maincontent {
+	margin:10px 0 0 0;
+	padding:0;
+}
+
+#m_nav { margin:10px 0;}
+
+.div_frame .color_bg { height:20px; margin:2px 0;}
+
+#splash {
+	margin:2px 0;
+	padding:0;
+	height:300px;
+	overflow:hidden;
+	position:relative;
+}
+
+#splash ._seal { position:absolute; left:0; top:0; }
+#splash ._first { position:absolute; left:0; top:142px; border-top:1px solid #FFF; }
+#splash ._second { position:absolute; left:159px; top:0; border-bottom:1px solid #FFF; }
+#splash ._third { position:absolute; left:477px; top:58px; border-top:1px solid #FFF; }
+#splash ._fourth { position:absolute; left:637px; top:0; }
+#splash ._logo { position:absolute; left:185px; bottom:0px; }
+
+
+#m_nav table { width:100%; margin:3px 0;}
+#m_nav td { padding:10px 0;}
+#main_nav_opts { background-color:#333333;}
+#main_nav_opts a span { text-transform:uppercase; }
+#main_nav_opts a { color:#F9F9F9; text-transform:lowercase; font-size:1em; font-weight:bold; }
+#main_nav_opts a:hover { color:#FF9900; text-decoration:none; }
+#main_nav_opts th { padding:5px 0; }
+
+
+#main_nav_opts th {
+	background-image:url(../images/orange_rect.jpg);
+	background-repeat:no-repeat;
+	background-position:right;
+}
+
+#main_nav_opts th.last {
+	background-image:none!important;
+}
+
+#main_nav_subopts td {
+	width:112px !important;
+	valign:top; vertical-align:top;
+}
+
+/* FOR NON-TABLE LAYOUT
+#main_nav_header {
+	list-style-type:none;
+	background-color:#333;
+	margin:2px 0;
+	padding:3px 0px;	
+	width:100%;
+}
+
+#main_nav_header li {
+	list-style-type:none;
+	display:inline-block;
+	border-right:3px solid #FF9900; 
+	padding:5px 0;
+	width:112px !important;
+	text-align:center;
+}
+
+#main_nav_header li.last { border-right:0px; }
+#main_nav_header li a span { text-transform:uppercase; }
+#main_nav_header li a { color:#F9F9F9; text-transform:lowercase; font-size:1em; font-weight:bold; }
+#main_nav_header li a:hover { color:#FF9900; text-decoration:none; }
+/* END FOR NON-TABLE LAYOUT */
+
+#updates { position:relative; margin:2px 0;}
+#updates ._tier1,
+#updates ._tier2,
+#updates ._tier3 {
+	width:298px;
+	height:70px;
+	border:1px solid #AAA;
+	padding:8px;
+	background-color:#E6E6E6;
+}
+#updates ._tier1 { position:absolute; top:0; left:0;}
+#updates ._tier2 { position:absolute; top:0; left:317px;}
+#updates ._tier3 { float:right;}
+#updates ._tier3 select {
+	width:100%;
+}
+
+.update_title {
+	float:left; 
+	border-right:1px solid #AAA; 
+	margin:0 5px 0 0;
+	padding:20px;
+	font-size:1.5em;
+}
+
+.update_data { 
+	float:left; 
+	width:190px; 
+	line-height:1.25em;
+	margin-left:10px;
+	font-size:1.20em;!important
+}
+
+.update_data .rotate p {
+	display:none;
+}
+.update_data a { color:#333; }
+.update_data span {
+	text-transform:lowercase;
+	font-weight:bold;
+	float:right;
+}
+
+#options { margin:25px 0 0 0; }
+#options span { font-size:1.25em; margin:0 0 10px 5px;}
+#options a { text-decoration:none; color:#333;}
+
+#social_media_connect {
+	width:70px;
+	float:right;
+}
+
+#social_media_connect ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+#social_media_connect ul li {
+	list-style-type:none;
+	display:inline-block;
+}
+
+#social_media_connect ul li img {
+	width:20px;
+}
+
+#special:hover { cursor:pointer; }
+
+/*****************************************************************/
+/*
+//////////// -- LOWER CONTENT -- ////////////
+*/
+
+#empty {
+	width:150px;
+	height:73px;
+	position:absolute;
+	top:0;
+	left:158px;
+	border-bottom:1px solid #FFF;
+	padding:5px;
+}
+
+#lc_frame {margin-top:2px;}
+#lowercontent { 
+	padding:2px 0;
+	position:relative;
+	height:180px;
+}
+
+#lowercontent ._first { 
+	position:absolute; 
+	top:0; 
+	left:0; 
+	border-bottom:1px solid #FFF;
+}
+
+#lowercontent ._second { 
+	position:absolute; 
+	bottom:0; 
+	left:237px; 
+	border-left:1px solid #FFF;
+}
+
+#lowercontent ._third { 
+	position:absolute; 
+	top:0; 
+	left:395px; 
+	border-bottom:1px solid #FFF; 
+	border-left:1px solid #FFF; 
+	border-right:1px solid #FFF;
+}
+
+#lowercontent ._fourth { 
+	position:absolute; 
+	bottom:0; 
+	left:637px;
+	border-right:1px solid #FFF;
+	border-top:1px solid #FFF;
+}
+
+#lowercontent ._fifth { 
+	position:absolute; 
+	top:0; 
+	right:0;
+	border-bottom:1px solid #FFF;
+	border-left:1px solid #FFF;
+}
+
+#lowercontent ._welcome { 
+	position:absolute; 
+	z-index:100;
+	bottom:0; 
+	left:376px;
+}
+
+#_spotlight_header {
+	width:100px;
+	padding:15px 10px 15px;
+	border-right:1px solid #000;
+	position:absolute;
+	left:660px;
+	top:15px;
+	text-align:right;
+}
+
+#_spotlight_text {
+	position:absolute; 
+	left:760px;
+	top:125px;
+	font-size:120%;	
+}
+
+#_spotlight_text a { color:#333;}
+
+.img_detail {
+	position:absolute;
+	top:165px;
+	left:70px;
+}
+
+/*********************************************************************************/
+
+#show_colleges {
+	cursor:pointer;
+	background-image:url(../images/arrow_down.png);
+	background-position:right;
+	background-repeat:no-repeat;
+}
+
+#college_list {
+	background-color:#FFF;
+	border:1px solid #FAAF40;
+	position:absolute;
+	width:300px;
+	z-index:500;
+	overflow:hidden;
+}
+
+.selected_col ul li #college_list ul {
+	background-color:#FFF!important;
+	padding:0!important;
+	margin:0!important;
+	font-size:90%;
+	width:100%;
+}
+
+.selected_col ul li #college_list ul li { line-height:110%; background-color:none; padding:2px; }
+.selected_col ul li #college_list ul li a { color:#333!important;}
+.selected_col ul li #college_list ul li a:hover { color:#FFF!important; }
+.selected_col ul li #college_list ul li:hover { background-color:#FAAF40; }
+.selected_col ul li #college_list ul li:hover a {color:#FFF;}
+*select:focus {width: auto !important;}
+
+.img_detail a { color:#333;}
+.hideme { display:none;}
+
+/*********************************************************************************/
+span.customSelect { 
+	font-size:11px; 
+	font-weight:bold;
+	background-color:#FFF; 
+	color:#333; 
+	padding:7px 10px; 
+	border:1px solid #AAA; 
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px;
+	border-radius: 10px 10px; 
+}
+span.customSelect.changed { background-color: #f0dea4; }
+.customSelectInner { background:url(../images/arrow_select.jpg) no-repeat center right; }
