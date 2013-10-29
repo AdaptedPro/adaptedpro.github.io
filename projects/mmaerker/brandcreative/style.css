@@ -1,0 +1,440 @@
+/*   
+Theme Name: Brand / Creative
+Theme URI: http://www.mmaerker.com/themes/wp/brandcreative/
+Description: A search engine optimized website framework for WordPress.
+Author: Adam James
+Author URI: http://www.adaptedpro.net/
+Version: 1.0
+.
+Like WordPress, this work is released under GNU General Public License, version 2 (GPL).
+http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+.
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+b, strong {
+	font-weight:bold;
+}
+i,em {
+	font-style:italic;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	margin:0;
+	padding:0;
+	font-family:'Arial';
+	font-size:85%;
+	color:#999;
+}
+
+p { 
+	margin: 0 0 1.5em 0;
+	line-height:1.75em;
+	font-size:1em;
+}
+
+h1 { font-size:2em; }
+h2 { font-size:1.5em; }
+h3 { font-size:1.25em; }
+h2 { font-size:1.125em; }
+h1,h2,h3,h4 { 
+	color:#666; 
+	margin:0 0 1.5em 0; 
+	font-weight:bold;
+}
+
+.post_content p {padding-bottom:10px;} 
+
+
+#wrapper { 
+	width:980px; 
+	margin:0 auto; 
+	padding:0 0 25px 0;
+}
+
+#masthead { height:150px;}
+#masthead_logo {
+	float:left;
+	width:250px;
+	margin:37px 0 0 0;
+	text-align:center;
+}
+
+#masthead_options {
+	float:right;
+	width:690px;
+	padding-right:30px;
+	text-align:left;
+	font-size:90%;
+}
+
+#masthead_options #tag_1 { position:absolute; }
+#masthead_options #tag_2 { position:absolute; left:200px; }
+#masthead_options #tag_3 { position:absolute; left:450px; }
+
+.gFont { 
+	font-family: 'Raleway', sans-serif;
+	font-size:1.85em; 
+	font-weight:200;
+	text-transform:lowercase;
+	color:#AAA;
+}
+
+#tags {
+	padding-top:35px;
+	margin-bottom:35px;
+	position:relative;
+}
+
+#top_nav {
+	text-align:left;
+}
+
+#sub_nav {
+	text-align:left;
+}
+
+#top_nav ul {
+	margin:0;
+	padding:0;
+}
+
+#top_nav ul li {
+	padding:5px 8px 5px 0;
+	margin:0 12px 0 0;	
+}
+
+#sub_nav ul li {
+	padding:0;
+	margin:0!important;
+}
+
+#top_nav ul li,
+#sub_nav ul li {
+	display:inline-block;
+}
+
+#top_nav ul li a {
+	text-transform:lowercase;
+	font-weight:bold;
+	color:#666;
+}
+
+#sub_nav ul li a {
+	color:#AAA;
+}
+
+#top_nav ul li a,
+#sub_nav ul li a  {
+	text-decoration:none;
+}
+
+#top_nav ul li.current_page_item a,
+#sub_nav ul li.current_page_item a,
+#top_nav ul li a.selected  {
+	color:#b8cd8a;
+}
+
+#primary {
+	width:250px;
+	position:absolute;
+	text-align:center;
+}
+
+#project_description {
+	width:190px;
+	margin:0 auto;
+	text-align:left;
+}
+
+#secondary {
+	width:690px;
+	position:relative;
+	left:260px;
+	padding-bottom:10px;
+}
+
+#secondary.home {
+}
+
+#project_layout {
+	width:100%;
+	text-align:center;
+}
+
+.narrow {
+	width:530px;
+	/*margin:0 auto;*/
+	text-align:left;
+}
+
+#home_projs {
+	margin-right:30px;	
+}
+
+#home_projs li {
+	text-align:right;
+	margin-bottom:14px;
+}
+
+#home_projs li a {
+	color:#AAA;
+	text-decoration:none;
+}
+
+#home_projs li a:hover,
+#home_projs li a.selected { color:#b8cd8a; }
+
+#contact_form ul li { margin-bottom:20px; }
+#contact_form lable { color:#999; }
+
+.jcarousel-skin-tango .jcarousel-direction-rtl {
+	direction: rtl;
+}
+
+.jcarousel-skin-tango img {
+	margin:0 auto;
+}
+
+.jcarousel-skin-tango .jcarousel-container-horizontal {
+    width: 580px;
+    padding:0;
+    margin-left:40px;
+}
+
+.jcarousel-skin-tango .jcarousel-clip {
+    overflow: hidden;
+}
+
+.jcarousel-skin-tango .jcarousel-clip-horizontal {
+    width:  580px;
+    height: 580px;
+}
+
+.jcarousel-skin-tango .jcarousel-item {
+    width: 580px;
+    height: 580px;
+}
+
+.jcarousel-skin-tango .jcarousel-item-horizontal {
+	/*
+	margin-left: 0;
+    margin-right: 10px;
+    */
+}
+
+.jcarousel-skin-tango .jcarousel-clip-horizontal {
+    width:  580px;
+    height: 580px;
+}
+
+.jcarousel-skin-tango .jcarousel-item {
+    width: 580px;
+    height: 580px;
+}
+
+.jcarousel-skin-tango .jcarousel-item-horizontal {
+	/*
+	margin-left: 0;
+    margin-right: 10px;
+    */
+}
+
+.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-item-horizontal {
+	margin-left: 10px;
+    margin-right: 0;
+}
+
+#mycarousel-prev,
+#mycarousel-next {
+	position:absolute;
+	top:110px;
+}
+
+#mycarousel {
+	
+	height:580px;
+}
+
+#mycarousel-prev {
+	left:0;
+}
+
+#mycarousel-next {
+	left:630px;
+}
+
+/*
+///////////////////////////////////////////////--Infinite Carousel
+*/
+.infiniteCarousel {
+  width: 650px;
+  position: relative;
+}
+
+.infiniteCarousel .wrapper {
+  width: 650px; /* .infiniteCarousel width - (.wrapper margin-left + .wrapper margin-right) */
+  overflow: auto;
+  min-height: 650px;
+  margin: 0;
+  position: absolute;
+  top: 0;
+}
+
+.infiniteCarousel .wrapper ul {
+  width: 9999px;
+  list-style-image:none;
+  list-style-position:outside;
+  list-style-type:none;
+  margin:0 20px 0 0;
+  padding:0;
+  position: absolute;
+  top: 0;
+}
+
+.infiniteCarousel ul li {
+  display:block;
+  float:left;
+  padding: 10px;
+  height: 650px;
+  width: 650px;
+}
+
+.infiniteCarousel ul li a img {
+  display:block;
+}
+
+.infiniteCarousel .arrow {
+  display: none;
+  height: 36px;
+  width: 37px;
+  background-color:#333;
+  text-indent: -999px;
+  position: absolute;
+  top: 37px;
+  cursor: pointer;
+}
+
+.infiniteCarousel .forward {
+  background-position: 0 0;
+  right: 0;
+}
+
+.infiniteCarousel .back {
+  background-position: 0 -72px;
+  left: 0;
+}
+
+.infiniteCarousel .forward:hover {
+  background-position: 0 -36px;
+}
+
+.infiniteCarousel .back:hover {
+  background-position: 0 -108px;
+}
+
+.contact_mm { width:430px; }
+.contact #node {
+	float: left;
+	width: 360px;
+	display: none;
+	padding: 5px;
+	color: #FFF;
+	border: 1px solid #9B413F;
+	background-color:#F00;
+	margin-bottom: 10px;
+}
+
+.contact #success {
+	float: left;
+	width: 360px;
+	background-color: #8ACC39;
+	color: #FFF;
+	padding: 5px;
+	border: 1px solid #6DA32C;
+	display: none;
+	margin-bottom: 10px;
+}
+
+#client_list {
+	width:400px;
+	text-align:left;
+}
+
+#client_list ul li {
+	 line-height:110%;
+}
+
+/*
+*/
+
+.slider {
+  width: 650px; 
+  height: 650px;
+  overflow: hidden;
+}
+.slider > ul {
+  /* styled by JS to match the added width and height of all <li>Õs */
+  position: relative;
+  -webkit-transition: 0.5s left;
+  -moz-transition: 0.5s left;
+  -ms-transition: 0.5s left;
+  -o-transition: 0.5s left;
+  list-style: none;
+  margin: 0; padding: 0;
+}
+  .slider > ul > li {
+    float: left;
+    width: 650px; height: 650px;
+  }
+
+.hidden { display:none;}
+.clr { clear:both;	line-height:0; height:0; }
+.right { float:right; }
+.left { float:left; }
+.noborder { border:none!important; }
+.list_div { float:left; margin-right:25px; display:inline-block; }
+.list_div ul li { margin-bottom:7px; width:175px; max-width:175px;}
